@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726982F621CD2CA800DE26EF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726982F521CD2CA800DE26EF /* DetailsViewController.swift */; };
+		726982F821CD30D900DE26EF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */; };
 		728C1E9821CCE55E000E68D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C1E9721CCE55E000E68D7 /* AppDelegate.swift */; };
-		728C1E9A21CCE55E000E68D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C1E9921CCE55E000E68D7 /* ViewController.swift */; };
+		728C1E9A21CCE55E000E68D7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C1E9921CCE55E000E68D7 /* ListViewController.swift */; };
 		728C1E9D21CCE55E000E68D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728C1E9B21CCE55E000E68D7 /* Main.storyboard */; };
 		728C1E9F21CCE55F000E68D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728C1E9E21CCE55F000E68D7 /* Assets.xcassets */; };
 		728C1EA221CCE55F000E68D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728C1EA021CCE55F000E68D7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		726982F521CD2CA800DE26EF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		728C1E9421CCE55E000E68D7 /* POC Material transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC Material transition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728C1E9721CCE55E000E68D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		728C1E9921CCE55E000E68D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		728C1E9921CCE55E000E68D7 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		728C1E9C21CCE55E000E68D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		728C1E9E21CCE55F000E68D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728C1EA121CCE55F000E68D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				728C1E9721CCE55E000E68D7 /* AppDelegate.swift */,
-				728C1E9921CCE55E000E68D7 /* ViewController.swift */,
+				728C1E9921CCE55E000E68D7 /* ListViewController.swift */,
 				728C1E9B21CCE55E000E68D7 /* Main.storyboard */,
 				728C1E9E21CCE55F000E68D7 /* Assets.xcassets */,
 				728C1EA021CCE55F000E68D7 /* LaunchScreen.storyboard */,
 				728C1EA321CCE55F000E68D7 /* Info.plist */,
+				726982F521CD2CA800DE26EF /* DetailsViewController.swift */,
+				726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */,
 			);
 			path = "POC Material transition";
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				728C1E9A21CCE55E000E68D7 /* ViewController.swift in Sources */,
+				728C1E9A21CCE55E000E68D7 /* ListViewController.swift in Sources */,
 				728C1E9821CCE55E000E68D7 /* AppDelegate.swift in Sources */,
+				726982F821CD30D900DE26EF /* ImageCollectionViewCell.swift in Sources */,
+				726982F621CD2CA800DE26EF /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
