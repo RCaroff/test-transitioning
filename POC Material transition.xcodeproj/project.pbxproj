@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1431C0A621CD82D000CC47FD /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0A521CD82D000CC47FD /* ListPresenter.swift */; };
+		1431C0AA21CD831700CC47FD /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0A921CD831700CC47FD /* ListInteractor.swift */; };
+		1431C0AC21CD833E00CC47FD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0AB21CD833E00CC47FD /* Router.swift */; };
+		1431C0AE21CD94CC00CC47FD /* HeaderImageTransitionBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0AD21CD94CC00CC47FD /* HeaderImageTransitionBoundaries.swift */; };
+		1431C0B421CF002400CC47FD /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0B321CF002400CC47FD /* DetailsPresenter.swift */; };
+		1431C0B621CF009800CC47FD /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0B521CF009800CC47FD /* DetailsInteractor.swift */; };
+		1431C0B821CF00E200CC47FD /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431C0B721CF00E200CC47FD /* ImageRepository.swift */; };
 		726982F621CD2CA800DE26EF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726982F521CD2CA800DE26EF /* DetailsViewController.swift */; };
 		726982F821CD30D900DE26EF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */; };
 		728C1E9821CCE55E000E68D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C1E9721CCE55E000E68D7 /* AppDelegate.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1431C0A521CD82D000CC47FD /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		1431C0A921CD831700CC47FD /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		1431C0AB21CD833E00CC47FD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1431C0AD21CD94CC00CC47FD /* HeaderImageTransitionBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageTransitionBoundaries.swift; sourceTree = "<group>"; };
+		1431C0B321CF002400CC47FD /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		1431C0B521CF009800CC47FD /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		1431C0B721CF00E200CC47FD /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		726982F521CD2CA800DE26EF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		728C1E9421CCE55E000E68D7 /* POC Material transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC Material transition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1431C0A721CD82D700CC47FD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				728C1E9921CCE55E000E68D7 /* ListViewController.swift */,
+				1431C0A521CD82D000CC47FD /* ListPresenter.swift */,
+				1431C0A921CD831700CC47FD /* ListInteractor.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1431C0A821CD82E500CC47FD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				726982F521CD2CA800DE26EF /* DetailsViewController.swift */,
+				1431C0B321CF002400CC47FD /* DetailsPresenter.swift */,
+				1431C0B521CF009800CC47FD /* DetailsInteractor.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		728C1E8B21CCE55E000E68D7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +92,17 @@
 		728C1E9621CCE55E000E68D7 /* POC Material transition */ = {
 			isa = PBXGroup;
 			children = (
+				1431C0A821CD82E500CC47FD /* Details */,
+				1431C0A721CD82D700CC47FD /* List */,
 				728C1E9721CCE55E000E68D7 /* AppDelegate.swift */,
-				728C1E9921CCE55E000E68D7 /* ListViewController.swift */,
 				728C1E9B21CCE55E000E68D7 /* Main.storyboard */,
 				728C1E9E21CCE55F000E68D7 /* Assets.xcassets */,
 				728C1EA021CCE55F000E68D7 /* LaunchScreen.storyboard */,
 				728C1EA321CCE55F000E68D7 /* Info.plist */,
-				726982F521CD2CA800DE26EF /* DetailsViewController.swift */,
 				726982F721CD30D900DE26EF /* ImageCollectionViewCell.swift */,
+				1431C0AB21CD833E00CC47FD /* Router.swift */,
+				1431C0AD21CD94CC00CC47FD /* HeaderImageTransitionBoundaries.swift */,
+				1431C0B721CF00E200CC47FD /* ImageRepository.swift */,
 			);
 			path = "POC Material transition";
 			sourceTree = "<group>";
@@ -141,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1431C0AE21CD94CC00CC47FD /* HeaderImageTransitionBoundaries.swift in Sources */,
+				1431C0A621CD82D000CC47FD /* ListPresenter.swift in Sources */,
 				728C1E9A21CCE55E000E68D7 /* ListViewController.swift in Sources */,
 				728C1E9821CCE55E000E68D7 /* AppDelegate.swift in Sources */,
+				1431C0B421CF002400CC47FD /* DetailsPresenter.swift in Sources */,
+				1431C0AC21CD833E00CC47FD /* Router.swift in Sources */,
+				1431C0B821CF00E200CC47FD /* ImageRepository.swift in Sources */,
+				1431C0B621CF009800CC47FD /* DetailsInteractor.swift in Sources */,
+				1431C0AA21CD831700CC47FD /* ListInteractor.swift in Sources */,
 				726982F821CD30D900DE26EF /* ImageCollectionViewCell.swift in Sources */,
 				726982F621CD2CA800DE26EF /* DetailsViewController.swift in Sources */,
 			);

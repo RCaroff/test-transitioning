@@ -13,7 +13,7 @@
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="POC_Material_transition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ListViewController" customModule="POC_Material_transition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="sfa-bu-zSb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="FBG-mh-K4G" id="1BC-py-HQr"/>
                     </connections>
@@ -79,47 +80,63 @@
         <!--Details View Controller-->
         <scene sceneID="yJP-h8-hMB">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jfY-aE-HmW" customClass="DetailsViewController" customModule="POC_Material_transition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jfY-aE-HmW" customClass="DetailsViewController" customModule="POC_Material_transition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="srl-PW-vbE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-W4-BQZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuU-Dg-Ttw">
+                                <rect key="frame" x="16" y="258" width="43" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np8-HC-6nb">
+                                <rect key="frame" x="16" y="293.5" width="343" height="101.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-W4-BQZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="eiy-OH-ZfF"/>
+                                    <constraint firstAttribute="height" constant="250" id="eiy-OH-ZfF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZQL-sr-Hws" firstAttribute="trailing" secondItem="sZG-W4-BQZ" secondAttribute="trailing" id="8vz-dX-KGj"/>
+                            <constraint firstItem="yuU-Dg-Ttw" firstAttribute="leading" secondItem="ZQL-sr-Hws" secondAttribute="leading" constant="16" id="9pk-2e-ZhX"/>
                             <constraint firstItem="sZG-W4-BQZ" firstAttribute="leading" secondItem="ZQL-sr-Hws" secondAttribute="leading" id="GuJ-Lm-Fc7"/>
-                            <constraint firstItem="sZG-W4-BQZ" firstAttribute="top" secondItem="ZQL-sr-Hws" secondAttribute="top" id="XoB-tp-Hih"/>
+                            <constraint firstItem="ZQL-sr-Hws" firstAttribute="trailing" secondItem="Np8-HC-6nb" secondAttribute="trailing" constant="16" id="O8X-pf-miK"/>
+                            <constraint firstItem="Np8-HC-6nb" firstAttribute="top" secondItem="yuU-Dg-Ttw" secondAttribute="bottom" constant="8" id="PnP-RH-Qcc"/>
+                            <constraint firstItem="yuU-Dg-Ttw" firstAttribute="top" secondItem="sZG-W4-BQZ" secondAttribute="bottom" constant="8" id="kp5-Ju-Qnw"/>
+                            <constraint firstItem="Np8-HC-6nb" firstAttribute="leading" secondItem="ZQL-sr-Hws" secondAttribute="leading" constant="16" id="kuW-Kt-KTd"/>
+                            <constraint firstItem="sZG-W4-BQZ" firstAttribute="top" secondItem="srl-PW-vbE" secondAttribute="top" id="sMl-U8-9jE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZQL-sr-Hws"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="sZG-W4-BQZ" id="c69-6y-8Pi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c82-y8-p7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="-564"/>
+            <point key="canvasLocation" x="1781.5999999999999" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kya-Uc-hhf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hmq-5k-Ufy" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hmq-5k-Ufy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="285-9U-DFN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hr5-pu-SM1"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFK-S2-Tc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  var mainRouter: RouterInput!
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    if let rootNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? UINavigationController {
+      mainRouter = Router(navigationController: rootNavigationController)
+      mainRouter.route(to: .list)
+      window?.rootViewController = rootNavigationController
+    }
+    
     return true
   }
 
